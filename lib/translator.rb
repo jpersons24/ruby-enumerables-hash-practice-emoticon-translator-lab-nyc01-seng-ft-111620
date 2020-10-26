@@ -30,8 +30,8 @@ def get_english_meaning(file_path, japanese_emoticon)
     if inner_hash.value?(japanese_emoticon)
       english_meaning = key
     end
+    english_meaning
   end
-  english_meaning
 end
 
 # binding.pry
