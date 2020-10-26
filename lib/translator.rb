@@ -11,7 +11,8 @@ def load_library(file_path)
   emoticons.each do |key, value|
     emoticon_lib[:key][:english] = value[0]
     emoticon_lib[:key][:japanese] = value[1]
-
+  end
+  emoticon_lib
 end
 
 
