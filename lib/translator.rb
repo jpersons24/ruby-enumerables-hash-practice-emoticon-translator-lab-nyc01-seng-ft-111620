@@ -21,7 +21,11 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   # code goes here
-  load_library(file_path)
+  load_library(file_path).each do |key, inner_hash|
+    if inner_hash.value?(english_emoticon)
+      return key[:japanese]
+    end
+  end
 end
 
 def get_english_meaning(file_path, japanese_emoticon)
