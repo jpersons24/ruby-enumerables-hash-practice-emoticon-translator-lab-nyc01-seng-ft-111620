@@ -29,6 +29,6 @@ def get_english_meaning(file_path, japanese_emoticon)
     if value == [:japanese => japanese_emoticon]
       english_meaning = key
     end
+    english_meaning
   end
-  english_meaning
 end
