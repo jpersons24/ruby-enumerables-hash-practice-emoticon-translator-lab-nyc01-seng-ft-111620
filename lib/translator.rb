@@ -30,7 +30,7 @@ def get_english_meaning(file_path, japanese_emoticon)
     if inner_hash.value?(japanese_emoticon)
       return key
     else
-      return "Sorry, that emoticon was not found"
+      "Sorry, that emoticon was not found"
     end
   end
 end
