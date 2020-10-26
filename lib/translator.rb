@@ -27,7 +27,7 @@ def get_english_meaning(file_path, japanese_emoticon)
   # code goes here
   emoticons = load_library(file_path)
   emoticons.each do |key, inner_hash|
-    if inner_hash.include?(:japanese = japanese_emoticon)
+    if inner_hash.include?([:japanese] = japanese_emoticon)
       english_meaning = key
     end
   end
