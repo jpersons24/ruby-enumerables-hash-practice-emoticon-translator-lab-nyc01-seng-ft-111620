@@ -30,8 +30,8 @@ def get_english_meaning(file_path, japanese_emoticon)
     if inner_hash.value?(japanese_emoticon)
       return key
     end
-    p "Sorry, that emotion was not found"
   end
+  return "Sorry, that emoticon was not found"
 end
 
 # binding.pry
