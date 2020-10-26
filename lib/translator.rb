@@ -25,6 +25,6 @@ end
 
 def get_english_meaning(file_path, japanese_emoticon)
   # code goes here
-  load_library(file_path).key([:japanese] => japanese_emoticon)
-  end
+  meaning = load_library(file_path).key([:japanese] => japanese_emoticon)
+  meaning
 end
